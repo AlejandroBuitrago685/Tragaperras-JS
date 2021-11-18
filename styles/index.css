@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
+
+body {
+  padding: 20px;
+  font-family: "Mukta", sans-serif;
+  overflow: hidden;
+}
+#monedasActual {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.slot {
+  max-width: 150px;
+  max-height: 150px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.slot-group {
+  max-width: 710px;
+  min-width: 710px;
+}
+
+.palanca {
+  max-width: 150px;
+  max-height: 150px;
+  margin-left: 25px;
+  cursor: pointer;
+}
+
+.historial-container {
+  max-width: 400px;
+  min-width: 400px;
+  height: 345px;
+  border: 1px solid grey;
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.historial {
+  height: 345px;
+}
+
+.premios {
+  width: auto;
+  text-align: left;
+  margin-left: 50px;
+  border: 1px solid grey;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.premios label {
+  font-family: "Space Mono", monospace;
+  vertical-align: super;
+}
+
+.premios label:hover {
+  font-family: "Space Mono", monospace;
+  color: brown;
+  font-weight: 700;
+}
+
+.premios img {
+  margin-top: 5px;
+  max-height: 25px;
+  max-width: 25px;
+}
+
+.bottom-container {
+  display: inline-flex;
+}
+
+.exit {
+  margin-top: 10px;
+  width: 74%;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(165, 42, 42, 0.24);
+  font-weight: 700;
+}
+
+.exit:hover {
+  background-color: rgba(165, 42, 42, 0.397);
+  cursor: pointer;
+}
+
+#regalo {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  margin-left: 680px;
+  margin-top: 25px;
+  z-index: 1;
+}
+
+li{
+    font-weight: 700;
+}

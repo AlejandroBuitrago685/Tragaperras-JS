@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Tragaperras Alejandro Buitrago</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="shortcut icon" href="img/dollar.png" />
+</head>
+
+<body>
+    <div class="container">
+        <h3>Introduce monedas:</h3>
+        <input type="number" id="campoMonedas" placeholder="Introduce una cantidad"><button id="addButton"
+            onclick="añadirMonedas();">Introducir</button><br><br>
+
+        <label>El número de monedas actual es:</label>
+        <label id="monedasActual">0</label><br><br>
+        
+
+        <div class="slot-group">
+            <img id="imagen1" class="slot" src="img/pingu.png">
+            <img id="imagen2" class="slot" src="img/pingu.png">
+            <img id="imagen3" class="slot" src="img/pingu.png">
+            <img id="palanca" class="palanca" src="img/palancaUP.png" onmousedown="animacionPalancaDown();"
+                onmouseup="animacionPalancaUp()"><br>
+            <button class="exit" onclick="salir();">Terminar la partida</button><br><br><hr>
+        </div>
+        <img src="img/regalo.png" id="regalo">
+        <div style="display: inline-flex;"><h3>Historial de movimientos</h3><h3 style="margin-left: 225px;">Premios</h3></div><br> 
+        <div class="bottom-container">
+            <div class="historial-container">
+                <ul id="historial"></ul>
+            </div>
+            <div class="premios">
+                <img id=dollar src="img/dollar.png"><label> + </label><img id=dollar src="img/dollar.png"><label> +
+                </label><img id=dollar src="img/dollar.png"><label> 10 monedas</label><br>
+                <img id=dollar src="img/dollar.png"><label> + </label><img id=dollar src="img/dollar.png"><label> +
+                </label><img id=dollar src="img/pingu.png"><label> 4 monedas</label><br>
+                <img id=dollar src="img/dollar.png"><label> + </label><img id=dollar src="img/pingu.png"><label> +
+                </label><img id=dollar src="img/pingu.png"><label> 1 moneda</label><br>
+                <img id=dollar src="img/cherries.png"><label> + </label><img id=dollar src="img/cherries.png"><label> +
+                </label><img id=dollar src="img/cherries.png"><label> 5 monedas</label><br>
+                <img id=dollar src="img/orange.png"><label> + </label><img id=dollar src="img/orange.png"><label> +
+                </label><img id=dollar src="img/orange.png"><label> 5 monedas</label><br>
+                <img id=dollar src="img/cherries.png"><label> + </label><img id=dollar src="img/cherries.png"><label> +
+                </label><img id=dollar src="img/pingu.png"><label> 2 monedas</label><br>
+                <img id=dollar src="img/orange.png"><label> + </label><img id=dollar src="img/orange.png"><label> +
+                </label><img id=dollar src="img/pingu.png"><label> 2 monedas</label><br>
+                <img id=dollar src="img/carrots.png"><label> + </label><img id=dollar src="img/carrots.png"><label> +
+                </label><img id=dollar src="img/dollar.png"><label> 3 monedas</label><br>
+                <img id=dollar src="img/banana.png"><label> + </label><img id=dollar src="img/banana.png"><label> +
+                </label><img id=dollar src="img/dollar.png"><label> 3 monedas</label><br>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="JS/control.js"></script>
+
+</html>
